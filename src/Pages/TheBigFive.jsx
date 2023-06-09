@@ -5,7 +5,7 @@ export default function TheBigFive() {
       <div className=" text-white paragraph-container max-w-screen-xl  bg-[#191f2ecb] p-10 rounded-2xl  sm:ml-16 sm:mt-16 ">
         <div className="flex flex-col sm:flex-row">
           <img
-            src="./../src/assets/Images/clock.png"
+            src="./../src/assets/images/clock.png"
             alt="img"
             className="w-6"
           />
