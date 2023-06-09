@@ -85,7 +85,7 @@ export default function Navbar() {
             className="ul-container  w-full md:block md:w-auto"
             id="navbar-default"
           >
-            <ul className="text-black tracking-wider font-light flex flex-col md:items-center sm:items-start  sm:items-start p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-transparent md:dark:bg-transparent dark:border-gray-700  dark:text-black ">
+            <ul className="text-black tracking-wider font-light flex flex-col md:items-center sm:items-start   p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-transparent md:dark:bg-transparent dark:border-gray-700  dark:text-black ">
               <li>
                 <a
                   href="#"
