@@ -35,7 +35,7 @@ export default function Navbar() {
           <div className=" flex gap-5">
             <Link to="/" className="logo-container flex items-center sm:w-auto">
               <img
-                src="../src/assets/Images/logo.svg"
+                src="./../src/assets/Images/logo.svg"
                 className="h-8 mr-3"
                 alt="LOGO"
               />
@@ -53,7 +53,7 @@ export default function Navbar() {
                 className="search-input bg-[#252A40] w-full sm:w-64 px-4 py-2 rounded-lg border-none"
               />
               <img
-                src="../src/assets/Images/search.png"
+                src="./../src/assets/Images/search.png"
                 alt="Search"
                 className="absolute right-2 top-1/2 transform -translate-y-1/2 w-3 sm:w-auto cursor-pointer"
               />
@@ -113,7 +113,7 @@ export default function Navbar() {
               </li>
               <li>
                 <img
-                  src="../src/assets/Images/bell.png"
+                  src="./../src/assets/Images/bell.png"
                   alt=""
                   className="cursor-pointer"
                 />
