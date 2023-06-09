@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import TheBigFive from "./Pages/TheBigFive";
-import backgroundImage from "./assets/Images/image.png";
+import backgroundImage from "/Images/image.png";
 
 function App() {
   const styles = {

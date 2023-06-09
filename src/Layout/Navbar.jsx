@@ -34,11 +34,7 @@ export default function Navbar() {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className=" flex gap-5">
             <Link to="/" className="logo-container flex items-center sm:w-auto">
-              <img
-                src="./../src/assets/Images/logo.svg"
-                className="h-8 mr-3"
-                alt="LOGO"
-              />
+              <img src="/Images/logo.svg" className="h-8 mr-3" alt="LOGO" />
               <span className="self-center text-2xl  whitespace-nowrap dark:text-white sm:w-auto sm:text-base md:text-2xl">
                 Students{" "}
                 <span className="text-gray-500 font-thin sm:text-base md:text-2xl">
@@ -53,7 +49,7 @@ export default function Navbar() {
                 className="search-input bg-[#252A40] w-full sm:w-64 px-4 py-2 rounded-lg border-none"
               />
               <img
-                src="./../src/assets/Images/search.png"
+                src="/Images/search.png"
                 alt="Search"
                 className="absolute right-2 top-1/2 transform -translate-y-1/2 w-3 sm:w-auto cursor-pointer"
               />
@@ -112,11 +108,7 @@ export default function Navbar() {
                 </a>
               </li>
               <li>
-                <img
-                  src="./../src/assets/Images/bell.png"
-                  alt=""
-                  className="cursor-pointer"
-                />
+                <img src="/Images/bell.png" alt="" className="cursor-pointer" />
               </li>
               <li>
                 <div className="flex">
