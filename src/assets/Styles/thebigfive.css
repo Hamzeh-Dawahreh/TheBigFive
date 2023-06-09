@@ -1,0 +1,76 @@
+.shadow-inner {
+  box-shadow: inset 0 0 10px 0 rgb(0, 0, 0);
+}
+@media (max-width: 1365px) {
+  .paragraph-container {
+    width: 70rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 1285px) {
+  .paragraph-container {
+    width: 60rem;
+  }
+
+  .paragraph-container p {
+    width: 100%;
+  }
+  .paragraph-container h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1140px) {
+  .paragraph-container {
+    width: 50rem;
+  }
+  .paragraph-container h1 {
+    font-size: 25px;
+  }
+  .paragraph-container p {
+    font-size: smaller;
+  }
+}
+@media (max-width: 950px) {
+  .paragraph-container {
+    font-size: small;
+    width: 45rem;
+  }
+  .paragraph-container h1 {
+    font-size: medium;
+  }
+  .enter {
+    width: 15rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .paragraph-container {
+    width: 40rem;
+  }
+}
+@media (max-width: 700px) {
+  .paragraph-container {
+    width: 35rem;
+  }
+}
+@media (max-width: 640px) {
+  .page-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 560px) {
+  .paragraph-container {
+    width: 30rem;
+  }
+}
+@media (max-width: 480px) {
+  .paragraph-container {
+    width: 25rem;
+  }
+}
+@media (max-width: 400px) {
+  .paragraph-container {
+    width: 22rem;
+  }
+}
