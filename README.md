@@ -18,34 +18,29 @@ I made design choices that prioritize usability and responsiveness, ensuring tha
 
 ## Managing Dynamic State with React Hooks
 
-When managing a dynamic state on this page, the `useState` and `useEffect` React hooks can be utilized. Here's an example scenario:
+The `useEffect` hook in React is used to handle side effects and manage the lifecycle of a component. It combines the functionality of both `componentDidMount` and `componentDidUpdate`. It allows you to perform tasks like fetching data from an API or updating the component's state when certain dependencies change.
 
-Let's say we have a form component where the user can input their name. We want to display a personalized greeting message using the entered name. We can manage this dynamic state using the `useState` and `useEffect` hooks.
+For instance, consider the following code snippet as an example:
 
-```javascript
-import React, { useState, useEffect } from "react";
+```jsx
+useEffect(() => {
+  axios
+    .get("https://jsonplaceholder.typicode.com/users/1")
+    .then((response) => {
+      const responseData = response.data;
+      setData(responseData);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}, []);
 
-const GreetingForm = () => {
-  const [name, setName] = useState("");
-  const [greeting, setGreeting] = useState("");
-
-  useEffect(() => {
-    if (name) {
-      setGreeting(`Hello, ${name}!`);
-    } else {
-      setGreeting("");
-    }
-  }, [name]);
-
-  const handleChange = (e) => {
-    setName(e.target.value);
-  };
-
-  return (
-    <div>
-      <input type="text" value={name} onChange={handleChange} />
-      <p>{greeting}</p>
-    </div>
-  );
-};
+useEffect(() => {
+  if (userData) {
+    const emailHash = md5(userData.email);
+    const gravatarUrl = `https://www.gravatar.com/avatar/${emailHash}?d=identicon`;
+    console.log(gravatarUrl);
+    setAvatar(gravatarUrl);
+  }
+}, [userData]);
 ```
